@@ -9,13 +9,16 @@ Brewery is a CLI (Command-Line Interface) application for the Brewery Cafe.This 
 - [Getting Started](#getting-started)
 - [Author](#author)
 ## Features 
-- Products data added
-- Add display product functionality
  1. Order Item : 
  - Product Search with Validation
  -  Quantity Input with Error Handling
  - Cup Size Selection for Beverages
  - ➕ Add Multiple Products in One Session
+ 2. Billing 
+ - Display Final Bill: Lists all selected products with quantity and cost.
+ - Total Calculation: Computes total cost of all selected items.
+ - Automatic Discount: Applies a 10% discount if total exceeds ₹1000.
+ - Payment Confirmation: Asks for user confirmation before proceeding.
 ## Tech Stack 
 
 **TypeScript** 
