@@ -31,6 +31,12 @@ export async function orderProduct(): Promise<SelectedItem[]> {
                 cupsize = size as cupSize;
             }
         }
+        selectedItems.push({ product, quantity, cupsize });
+
+        const moreItems = (await ask("Want to add another product? (yes/no): ")).trim().toLowerCase();
+        if (moreItems === "no") {
+            // return billing();
+        }
     }
     return selectedItems
 }
