@@ -13,6 +13,11 @@ export async function billing(): Promise<SelectedItem[]> {
         const itemTotal = product.price * quantity;
         total += itemTotal;
         console.log("Total cost : " + total)
-    })
+    });
+    if (total > 1000) {
+        discount = total * 0.1;
+        total -= discount;
+        console.log("Discount is applied (10% off for if bill > 1000)")
+    }
     return selectedItems;
 }
