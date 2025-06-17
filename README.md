@@ -8,7 +8,8 @@ Brewery is a CLI (Command-Line Interface) application for the Brewery Cafe.This 
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
 - [Author](#author)
-
+## Features 
+- Products data added
 ## Tech Stack 
 
 **TypeScript** 
