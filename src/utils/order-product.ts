@@ -1,6 +1,7 @@
 import { products } from "../data/product-data";
 import { SelectedItem } from "../interfaces/order-item";
 import { cupSize } from "../interfaces/order-item";
+import { billing } from "./generate-bill";
 import { ask } from "./readline-module";
 export let selectedItems: SelectedItem[] = [];
 export async function orderProduct(): Promise<SelectedItem[]> {
@@ -35,7 +36,7 @@ export async function orderProduct(): Promise<SelectedItem[]> {
 
         const moreItems = (await ask("Want to add another product? (yes/no): ")).trim().toLowerCase();
         if (moreItems === "no") {
-            // return billing();
+            return billing();
         }
     }
     return selectedItems
